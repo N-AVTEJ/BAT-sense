@@ -1065,7 +1065,7 @@ function verdictLine(runs) {
 }
 
 $("btn-share").addEventListener("click", async () => {
-  const text = `🏏 ${batterName()} (me) smashed ${match.runs}/${match.wickets} in Gyro Cricket, top bat speed ${match.stats.bestBat} km/h, longest six ${match.stats.longestSix} m. I swing my ACTUAL phone. Beat that.`;
+  const text = `🏏 ${batterName()} (me) smashed ${match.runs}/${match.wickets} in BATsense, top bat speed ${match.stats.bestBat} km/h, longest six ${match.stats.longestSix} m. I swing my ACTUAL phone. Beat that.`;
   if (navigator.share) { try { await navigator.share({ text }); } catch (_) {} }
   else {
     try { await navigator.clipboard.writeText(text); } catch (_) {}
@@ -1199,7 +1199,7 @@ const STARS = Array.from({ length: 42 }, (_, i) => ({
   p: (i * 53) % 7,
 }));
 
-const HOARD_TEXT = ["GYRO", "SIX!!", "CRICKET", "SWING", "HOWZAT", "PREMIUM"];
+const HOARD_TEXT = ["BATSENSE", "SIX!!", "CRICKET", "SWING", "HOWZAT", "PREMIUM"];
 const HOARD_COLS = ["#8dd63c", "#3aa7e0", "#e0b93a", "#d05468"];
 
 let lastSwingDir = null; // handed swing angle, drawn on the replay

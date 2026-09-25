@@ -1,4 +1,4 @@
-# Gyro Cricket 🏏
+# BATsense 🏏
 
 Swing your phone like a cricket bat. The accelerometer and gyroscope measure your real swing speed, timing, and bat angle; a physics sim decides where the ball went: six, four, caught in the deep, or bowled. No server, no accounts, pure sensor math.
 
@@ -7,7 +7,7 @@ Swing your phone like a cricket bat. The accelerometer and gyroscope measure you
 It is a static web app. Any static server works:
 
 ```bash
-cd GyroCricket
+cd BAT-sense
 python3 -m http.server 8000
 # open http://localhost:8000
 ```
