@@ -686,7 +686,19 @@ body.fire .fire-vignette { opacity: 1; }
 
 .cal-canvas { width: min(300px, 86%); margin: 0 auto; display: block; }
 
-/* creator credit on the home screen */
+/* creator links on the home screen */
+.home-links {
+  z-index: 1;
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.home-links .creator {
+  margin-top: 0;
+}
 .creator {
   z-index: 1;
   margin-top: 16px;
@@ -719,5 +731,6 @@ body.fire .fire-vignette { opacity: 1; }
   .home-foot .btn { padding: 10px 14px; font-size: 13px; }
   .best-strip { margin-top: 8px; min-height: 0; }
   .badge-shelf { margin-top: 6px; font-size: 18px; }
-  .creator { margin-top: 8px; padding: 6px 12px; font-size: 12px; }
+  .home-links { margin-top: 8px; gap: 6px; }
+  .creator { margin-top: 0; padding: 6px 12px; font-size: 12px; }
 }
